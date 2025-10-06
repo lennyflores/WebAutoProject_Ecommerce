@@ -1,0 +1,19 @@
+2025-10-06 15:08:18,182 UTC INFO     test_login_page  Starting the session
+2025-10-06 15:08:20,843 UTC INFO     src.pages.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-06 15:08:20,854 UTC INFO     test_login_page  Verifying the elements displayed
+2025-10-06 15:08:20,861 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//*[@id='root']/div/div[1]")
+2025-10-06 15:08:20,918 UTC INFO     test_login_page  login header: Swag Labs
+2025-10-06 15:08:20,918 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//*[@id='root']/div/div[1]")
+2025-10-06 15:08:20,964 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-06 15:08:21,002 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-06 15:08:21,051 UTC INFO     test_login_page  Enter username
+2025-10-06 15:08:21,060 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//input[@id='user-name']")
+2025-10-06 15:08:21,201 UTC INFO     src.pages.base_page  Entering text:  standard_user on ('xpath', "//input[@id='user-name']")
+2025-10-06 15:08:21,208 UTC INFO     test_login_page  Enter password
+2025-10-06 15:08:21,214 UTC INFO     src.pages.base_page  Finding element:  ('id', 'password')
+2025-10-06 15:08:21,304 UTC INFO     src.pages.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-06 15:08:21,304 UTC INFO     test_login_page  Click login button
+2025-10-06 15:08:21,317 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-06 15:08:23,372 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-06 15:08:23,551 UTC INFO     src.pages.base_page  Clicking element:  ('id', 'login-button')
+2025-10-06 15:08:23,566 UTC INFO     test_login_page  Closing the browser

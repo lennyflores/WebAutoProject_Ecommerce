@@ -1,0 +1,11 @@
+2025-10-05 21:31:43,788 UTC INFO     test_login_page  Starting the session
+2025-10-05 21:31:49,591 UTC INFO     src.pages.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-05 21:31:49,593 UTC INFO     test_login_page  Enter username
+2025-10-05 21:31:49,596 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//input[@id='user-name']")
+2025-10-05 21:31:49,766 UTC INFO     src.pages.base_page  Entering text:  standard_user on ('xpath', "//input[@id='user-name']")
+2025-10-05 21:31:49,768 UTC INFO     test_login_page  Enter password
+2025-10-05 21:31:49,770 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//input[@id='password']")
+2025-10-05 21:31:49,849 UTC INFO     src.pages.base_page  Entering text:  secret_sauce on ('xpath', "//input[@id='password']")
+2025-10-05 21:31:49,849 UTC INFO     test_login_page  Click login button
+2025-10-05 21:31:49,850 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//button[@id='login-button']")
+2025-10-05 21:32:00,359 UTC INFO     test_login_page  Closing the browser

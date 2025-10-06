@@ -1,0 +1,4 @@
+2025-10-06 11:57:41,651 UTC INFO     test_login_page  Starting the session
+2025-10-06 11:57:45,470 UTC INFO     src.pages.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-06 11:57:45,483 UTC INFO     test_login_page  Verifying the elements displayed
+2025-10-06 11:57:45,753 UTC INFO     test_login_page  Closing the browser

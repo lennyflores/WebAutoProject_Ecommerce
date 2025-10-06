@@ -1,0 +1,16 @@
+2025-10-05 22:58:02,194 UTC INFO     test_inventory_page  Starting the session
+2025-10-05 22:58:06,414 UTC INFO     src.pages.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-05 22:58:06,415 UTC INFO     test_inventory_page  Enter username
+2025-10-05 22:58:06,416 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//input[@id='user-name']")
+2025-10-05 22:58:06,564 UTC INFO     src.pages.base_page  Entering text:  standard_user on ('xpath', "//input[@id='user-name']")
+2025-10-05 22:58:06,567 UTC INFO     test_inventory_page  Enter password
+2025-10-05 22:58:06,568 UTC INFO     src.pages.base_page  Finding element:  ('id', 'password')
+2025-10-05 22:58:06,657 UTC INFO     src.pages.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-05 22:58:06,659 UTC INFO     test_inventory_page  Click login button
+2025-10-05 22:58:06,660 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-05 22:58:06,699 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-05 22:58:06,736 UTC INFO     src.pages.base_page  Finding element:  ('id', 'login-button')
+2025-10-05 22:58:06,892 UTC INFO     src.pages.base_page  Clicking element:  ('id', 'login-button')
+2025-10-05 22:58:07,038 UTC INFO     src.pages.inventory_page  Navigating to the inventory page: https://www.saucedemo.com/
+2025-10-05 22:58:07,042 UTC INFO     src.pages.base_page  Finding element:  ('class name', 'title')
+2025-10-05 22:58:17,363 UTC INFO     test_inventory_page  Closing the browser

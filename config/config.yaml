@@ -1,0 +1,4 @@
+BASE_URL:
+	development: https://www.saucedemo.com/
+	staging: https://www.saucedemo.com/
+    production: https://www.saucedemo.com/

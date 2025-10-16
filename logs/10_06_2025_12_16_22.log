@@ -1,5 +1,0 @@
-2025-10-06 12:16:24,648 UTC INFO     test_login_page  Starting the session
-2025-10-06 12:16:27,063 UTC INFO     src.pages.login_page  Navigating to the login page: https://www.saucedemo.com/
-2025-10-06 12:16:27,074 UTC INFO     test_login_page  Verifying the elements displayed
-2025-10-06 12:16:27,082 UTC INFO     src.pages.base_page  Finding element:  ('xpath', "//*[@id='root']/div/div[1]']")
-2025-10-06 12:16:27,474 UTC INFO     test_login_page  Closing the browser

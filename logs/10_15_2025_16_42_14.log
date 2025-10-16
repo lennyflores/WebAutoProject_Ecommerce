@@ -1,0 +1,9 @@
+2025-10-15 16:42:16,551 UTC INFO     src.pages.play.base_page_play  Navigating to: https://www.saucedemo.com/
+2025-10-15 16:42:19,439 UTC INFO     src.pages.play.base_page_play  Entering text 'standard_user' into INPUT element: INPUT
+2025-10-15 16:42:19,501 UTC INFO     src.pages.play.base_page_play  Entering text 'secret_sauce' into INPUT element: INPUT
+2025-10-15 16:42:19,554 UTC INFO     src.pages.play.base_page_play  Clicking on INPUT element: INPUT
+2025-10-15 16:42:20,118 UTC INFO     src.pages.play.base_page_play  Navigating to: https://www.saucedemo.com/
+2025-10-15 16:42:22,430 UTC INFO     src.pages.play.base_page_play  Entering text 'standard_user' into INPUT element: INPUT
+2025-10-15 16:42:22,507 UTC INFO     src.pages.play.base_page_play  Entering text 'secret_sauce' into INPUT element: INPUT
+2025-10-15 16:42:22,580 UTC INFO     src.pages.play.base_page_play  Clicking on INPUT element: INPUT
+2025-10-15 16:42:22,736 UTC INFO     src.pages.play.base_page_play  Clicking on Add to cart element: BUTTON

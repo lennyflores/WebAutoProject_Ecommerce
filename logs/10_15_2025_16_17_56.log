@@ -1,4 +1,0 @@
-2025-10-15 16:17:58,558 UTC INFO     src.pages.play.base_page_play  Navigating to: https://www.saucedemo.com/
-2025-10-15 16:18:02,056 UTC INFO     src.pages.play.base_page_play  Entering text 'standard_user' into INPUT element: INPUT
-2025-10-15 16:18:02,114 UTC INFO     src.pages.play.base_page_play  Entering text 'secret_sauce' into INPUT element: INPUT
-2025-10-15 16:18:02,161 UTC INFO     src.pages.play.base_page_play  Clicking on INPUT element: INPUT

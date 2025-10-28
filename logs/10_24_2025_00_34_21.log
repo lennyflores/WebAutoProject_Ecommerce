@@ -1,0 +1,25 @@
+2025-10-24 00:34:25,592 UTC INFO     src.pages.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-24 00:34:25,593 UTC INFO     test_checkout_page  Enter the credentials and then click on login button
+2025-10-24 00:34:25,595 UTC INFO     src.pages.selenium.login_page  Enter username
+2025-10-24 00:34:25,596 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'user-name')
+2025-10-24 00:34:25,746 UTC INFO     src.pages.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-24 00:34:25,747 UTC INFO     src.pages.selenium.login_page  Enter password
+2025-10-24 00:34:25,749 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'password')
+2025-10-24 00:34:25,851 UTC INFO     src.pages.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-24 00:34:25,852 UTC INFO     src.pages.selenium.login_page  Click login button
+2025-10-24 00:34:25,854 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-24 00:34:27,919 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-24 00:34:28,106 UTC INFO     src.pages.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-24 00:34:40,840 UTC INFO     src.pages.selenium.base_page  Finding element:  ('class name', 'shopping_cart_badge')
+2025-10-24 00:34:42,910 UTC INFO     src.pages.selenium.base_page  Finding element:  ('class name', 'shopping_cart_badge')
+2025-10-24 00:34:43,030 UTC INFO     src.pages.selenium.base_page  Clicking element:  ('class name', 'shopping_cart_badge')
+2025-10-24 00:34:43,030 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'checkout')
+2025-10-24 00:34:43,151 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'first-name')
+2025-10-24 00:34:43,268 UTC INFO     src.pages.selenium.base_page  Entering text:  John on ('id', 'first-name')
+2025-10-24 00:34:43,270 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'last-name')
+2025-10-24 00:34:43,368 UTC INFO     src.pages.selenium.base_page  Entering text:  Doe on ('id', 'last-name')
+2025-10-24 00:34:43,369 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'postal-code')
+2025-10-24 00:34:43,469 UTC INFO     src.pages.selenium.base_page  Entering text:  12345 on ('id', 'postal-code')
+2025-10-24 00:34:43,470 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'continue')
+2025-10-24 00:34:45,521 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'continue')
+2025-10-24 00:34:45,644 UTC INFO     src.pages.selenium.base_page  Clicking element:  ('id', 'continue')

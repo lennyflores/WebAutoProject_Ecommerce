@@ -39,3 +39,5 @@ class TestLoginPagePlay:
         # Assertions
         #expect(page.locator("[data-test=\"remove-sauce-labs-backpack\"]")).to_be_visible() 
         expect(inventory_page.remove_to_cart_button).to_be_visible() 
+
+    

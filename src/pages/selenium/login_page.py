@@ -3,25 +3,17 @@ from selenium.webdriver.common.by import By
 import logging
 from utils.logger import get_logger
 from src.pages.selenium.base_page import BasePage
+from src.pages.selenium.inventory_page import InventoryPage
 
 logger = get_logger(__name__)
 
 class LoginPage(BasePage):
 
     # Login page locators   
-    """self.username_input = page.get_by_role("textbox", name="Username")
-    self.password_input = page.get_by_role("textbox", name="Password")
-    self.login_button = page.get_by_role("button", name="Login")"""
-
-    self.username_input : Locator = page.locator("[data-test=\"username\"]")
-    self.password_input : Locator = page.locator("[data-test=\"password\"]")
-    self.login_button : Locator = page.locator("[data-test=\"login-button\"]")
-
-    """page.locator("[data-test=\"username\"]").click()
-    page.locator("[data-test=\"username\"]").fill("standard_user")
-    page.locator("[data-test=\"username\"]").press("Tab")
-    page.locator("[data-test=\"password\"]").fill("secret_sauce")
-    page.locator("[data-test=\"login-button\"]").click()"""
+    login_header = (By.XPATH, "//*[@id='root']/div/div[1]") 
+    username_input = (By.ID, "user-name")
+    password_input = (By.ID, "password")
+    login_button = (By.ID, "login-button")
  
     # Login page constructor
     def __init__(self, driver):
@@ -41,12 +33,16 @@ class LoginPage(BasePage):
         return self.find_element(self.login_header)
 
     def click_login_button(self):
-        self.click_element(self.login_button)       
+        self.click_element(self.login_button)              
 
     def get_login_button(self):
         return self.find_element(self.login_button)
 
     def login(self, username, password):
+        logger.info("Enter username")
         self.enter_username(username)
+        logger.info("Enter password")
         self.enter_password(password)
+        logger.info("Click login button")
         self.click_login_button()
+        return InventoryPage(self.driver) 

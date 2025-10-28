@@ -1,22 +1,16 @@
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from src.pages.login_page import LoginPage
+from src.pages.selenium.login_page import LoginPage
 from utils.logger import get_logger
 
 
 logger = get_logger(__name__)
-class TestsaucedemoLoginPage:
-    
-    """
-    @classmethod
-    def setup_class(self):
-        # start the session
-        self.driver = webdriver.Chrome()
-        logger.info("Starting the session")
-        self.driver.implicitly_wait(10)
-    """
-    def test_saucedemo_login_page(self, driver):
+class TestSaucedemoLoginPage:
+
+    @pytest.mark.functional
+    def test_successfull_login(self, driver, log_test_name):
         """
         Test that the login page is displayed with all options and login functionality
         """                
@@ -32,20 +26,6 @@ class TestsaucedemoLoginPage:
         assert login_page.get_login_button().is_enabled()       
         
         # login functionality
-        """logger.info("Enter username")
-        login_page.enter_username("standard_user")
-        logger.info("Enter password")
-        login_page.enter_password("secret_sauce")
-        logger.info("Click login button")
-        login_page.click_login_button()"""
         logger.info("Enter the credentials and then click on login button")
         login_page.login("standard_user", "secret_sauce")
         
-                
-    """
-    @classmethod
-    def teardown_class(self):
-        # Close the browser
-        logger.info("Closing the browser")
-        self.driver.quit()
-        """

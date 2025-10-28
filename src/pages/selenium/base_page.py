@@ -38,4 +38,9 @@ class BasePage:
 		time.sleep(effect_time)
 		apply_style(original_style)
 		
+	def get_element_text(self, by_locator):
+		"""
+		Get the text of an element
+		"""
+		return self.find_element(by_locator).text
 		

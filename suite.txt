@@ -1,0 +1,2 @@
+tests\test_login_page.py::TestSaucedemoLoginPage::test_saucedemo_login_page
+tests\test_inventory_page.py::TestsaucedemoInventoryPage::test_saucedemo_inventory_page

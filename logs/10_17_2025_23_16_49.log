@@ -1,0 +1,33 @@
+2025-10-17 23:17:05,127 UTC INFO     src.pages.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-17 23:17:05,128 UTC INFO     test_login_page  Verifying the elements displayed
+2025-10-17 23:17:05,130 UTC INFO     src.pages.selenium.base_page  Finding element:  ('xpath', "//*[@id='root']/div/div[1]")
+2025-10-17 23:17:05,180 UTC INFO     test_login_page  login header: Swag Labs
+2025-10-17 23:17:05,186 UTC INFO     src.pages.selenium.base_page  Finding element:  ('xpath', "//*[@id='root']/div/div[1]")
+2025-10-17 23:17:05,218 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:05,251 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:05,284 UTC INFO     test_login_page  Enter the credentials and then click on login button
+2025-10-17 23:17:05,286 UTC INFO     src.pages.selenium.login_page  Enter username
+2025-10-17 23:17:05,288 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'user-name')
+2025-10-17 23:17:05,414 UTC INFO     src.pages.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-17 23:17:05,419 UTC INFO     src.pages.selenium.login_page  Enter password
+2025-10-17 23:17:05,420 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'password')
+2025-10-17 23:17:05,527 UTC INFO     src.pages.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-17 23:17:05,528 UTC INFO     src.pages.selenium.login_page  Click login button
+2025-10-17 23:17:05,528 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:07,590 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:07,774 UTC INFO     src.pages.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-17 23:17:15,059 UTC INFO     src.pages.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-17 23:17:15,061 UTC INFO     test_inventory_page  Enter the credentials and then click on login button
+2025-10-17 23:17:15,062 UTC INFO     src.pages.selenium.login_page  Enter username
+2025-10-17 23:17:15,064 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'user-name')
+2025-10-17 23:17:15,213 UTC INFO     src.pages.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-17 23:17:15,214 UTC INFO     src.pages.selenium.login_page  Enter password
+2025-10-17 23:17:15,216 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'password')
+2025-10-17 23:17:15,316 UTC INFO     src.pages.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-17 23:17:15,319 UTC INFO     src.pages.selenium.login_page  Click login button
+2025-10-17 23:17:15,320 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:17,382 UTC INFO     src.pages.selenium.base_page  Finding element:  ('id', 'login-button')
+2025-10-17 23:17:17,553 UTC INFO     src.pages.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-17 23:17:17,554 UTC INFO     src.pages.selenium.base_page  Finding element:  ('class name', 'title')
+2025-10-17 23:17:17,605 UTC INFO     test_inventory_page  Page title: Products
+2025-10-17 23:17:17,606 UTC INFO     src.pages.selenium.base_page  Finding element:  ('class name', 'title')

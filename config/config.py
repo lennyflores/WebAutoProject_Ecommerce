@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-user_name = os.getenv("USERNAME")
-password = os.getenv("PASSWORD")
+user_name = os.getenv("standard_user")
+password = os.getenv("secret_sauce")
 
 
 BASE_URL = {

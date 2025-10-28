@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, Locator
 from src.pages.play.base_page_play import BasePagePlay
+from src.pages.play.inventory_page_play import InventoryPagePlay
 
 class LoginPagePlay(BasePagePlay):
     def __init__(self, page: Page):
@@ -21,6 +22,7 @@ class LoginPagePlay(BasePagePlay):
        
     def click_submit_button(self):
         self.click_element(self.login_button)
+        return InventoryPagePlay(self.driver)
 
     def login(self, username, password):
         self.enter_username(username)

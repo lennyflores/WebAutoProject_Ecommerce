@@ -1,0 +1,14 @@
+2025-10-29 13:18:13,398 UTC INFO     test_login_page  Enter the credentials and then click on login button
+2025-10-29 13:18:14,713 UTC INFO     test_login_page  Verifying the elements displayed
+2025-10-29 13:18:14,788 UTC INFO     test_login_page  login header: Swag Labs
+2025-10-29 13:18:17,469 UTC INFO     test_login_page  Login successful for user: standard_user
+2025-10-29 13:18:24,205 UTC INFO     test_login_page  Expected message: Epic sadface: Username and password do not match any user in this service
+2025-10-29 13:18:24,274 UTC INFO     test_login_page  Current Error message: Epic sadface: Username and password do not match any user in this service
+2025-10-29 13:18:26,873 UTC INFO     test_login_page  Expected message: Epic sadface: Password is required
+2025-10-29 13:18:26,918 UTC INFO     test_login_page  Current Error message: Epic sadface: Password is required
+2025-10-29 13:18:29,619 UTC INFO     test_login_page  Expected message: Epic sadface: Username is required
+2025-10-29 13:18:29,670 UTC INFO     test_login_page  Current Error message: Epic sadface: Username is required
+2025-10-29 13:18:32,301 UTC INFO     test_login_page  Expected message: Epic sadface: Username is required
+2025-10-29 13:18:32,350 UTC INFO     test_login_page  Current Error message: Epic sadface: Username is required
+2025-10-29 13:18:35,086 UTC INFO     test_login_page  Expected message: Epic sadface: Sorry, this user has been locked out.
+2025-10-29 13:18:35,127 UTC INFO     test_login_page  Current Error message: Epic sadface: Sorry, this user has been locked out.

@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 
 # Define the URL of your Selenium Grid Hub
-grid_url = "http://192.168.0.19:4444/wd/hub"  # Replace with your Hub's address if different
+grid_url = "http://localhost:4444/wd/hub"  # Replace with your Hub's address if different
 
 # Set desired capabilities for the test
 # This specifies that you want to run the test on a Chrome browser

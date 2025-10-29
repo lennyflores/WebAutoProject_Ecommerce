@@ -1,0 +1,54 @@
+2025-10-29 13:18:13,395 UTC INFO     conftest         Test name: 'test_successfull_login' started
+2025-10-29 13:18:14,711 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 13:18:14,926 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:15,056 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 13:18:15,057 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:15,150 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 13:18:15,151 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:17,449 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:17,479 UTC INFO     conftest         Test name: 'test_successfull_login' finished
+2025-10-29 13:18:20,799 UTC INFO     utils.read_json_data  Reading json file: tests\data\credentials_errors.json
+2025-10-29 13:18:20,801 UTC DEBUG    utils.read_json_data  Json file read successfully: [{'username': 'wrong_user', 'password': 'wrong_pass', 'error_message': 'Epic sadface: Username and password do not match any user in this service'}, {'username': 'user', 'password': '', 'error_message': 'Epic sadface: Password is required'}, {'username': '', 'password': 'password', 'error_message': 'Epic sadface: Username is required'}, {'username': '', 'password': '', 'error_message': 'Epic sadface: Username is required'}, {'username': 'locked_out_user', 'password': 'secret_sauce', 'error_message': 'Epic sadface: Sorry, this user has been locked out.'}]
+2025-10-29 13:18:20,803 UTC INFO     conftest         Test name: 'test_login_invalid[credentials_errors]' started
+2025-10-29 13:18:21,453 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 13:18:21,655 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:18:21,794 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:18:21,794 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:21,882 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  wrong_user on ('id', 'user-name')
+2025-10-29 13:18:21,883 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:21,971 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  wrong_pass on ('id', 'password')
+2025-10-29 13:18:21,973 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:24,205 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:24,398 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:18:24,521 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:18:24,523 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:24,620 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  user on ('id', 'user-name')
+2025-10-29 13:18:24,621 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:24,688 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'password')
+2025-10-29 13:18:24,688 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:26,872 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:27,048 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:18:27,173 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:18:27,175 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:27,259 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'user-name')
+2025-10-29 13:18:27,262 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:27,450 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  password on ('id', 'password')
+2025-10-29 13:18:27,450 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:29,618 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:29,805 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:18:29,936 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:18:29,936 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:30,033 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'user-name')
+2025-10-29 13:18:30,033 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:30,113 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'password')
+2025-10-29 13:18:30,114 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:32,300 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:32,504 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:18:32,610 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:18:32,611 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:18:32,716 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  locked_out_user on ('id', 'user-name')
+2025-10-29 13:18:32,717 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:18:32,821 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 13:18:32,823 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:18:35,085 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:18:35,130 UTC INFO     conftest         Test name: 'test_login_invalid[credentials_errors]' finished

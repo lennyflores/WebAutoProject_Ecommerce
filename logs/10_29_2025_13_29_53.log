@@ -1,0 +1,68 @@
+2025-10-29 13:29:55,568 UTC INFO     conftest         Test name: 'test_successfull_login' started
+2025-10-29 13:29:55,570 UTC INFO     test_login_page  Enter the credentials and then click on login button
+2025-10-29 13:29:56,359 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 13:29:56,361 UTC INFO     test_login_page  Verifying the elements displayed
+2025-10-29 13:29:56,421 UTC INFO     test_login_page  login header: Swag Labs
+2025-10-29 13:29:56,563 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:29:56,761 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 13:29:56,763 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:29:56,883 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 13:29:56,885 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:29:59,142 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:29:59,155 UTC INFO     test_login_page  Login successful for user: standard_user
+2025-10-29 13:29:59,158 UTC INFO     conftest         Test name: 'test_successfull_login' finished
+2025-10-29 13:30:00,913 UTC INFO     utils.read_json_data  Reading json file: tests\data\credentials_errors.json
+2025-10-29 13:30:00,914 UTC DEBUG    utils.read_json_data  Json file read successfully: [{'username': 'wrong_user', 'password': 'wrong_pass', 'error_message': 'Epic sadface: Username and password do not match any user in this service'}, {'username': 'user', 'password': '', 'error_message': 'Epic sadface: Password is required'}, {'username': '', 'password': 'password', 'error_message': 'Epic sadface: Username is required'}, {'username': '', 'password': '', 'error_message': 'Epic sadface: Username is required'}, {'username': 'locked_out_user', 'password': 'secret_sauce', 'error_message': 'Epic sadface: Sorry, this user has been locked out.'}]
+2025-10-29 13:30:00,916 UTC INFO     conftest         Test name: 'test_login_invalid[credentials_errors]' started
+2025-10-29 13:30:01,542 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 13:30:01,692 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:30:01,809 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:30:01,812 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:30:01,903 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  wrong_user on ('id', 'user-name')
+2025-10-29 13:30:01,903 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:30:01,982 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  wrong_pass on ('id', 'password')
+2025-10-29 13:30:01,984 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:30:04,185 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:30:04,187 UTC INFO     test_login_page  Expected message: Epic sadface: Username and password do not match any user in this service
+2025-10-29 13:30:04,236 UTC INFO     test_login_page  Current Error message: Epic sadface: Username and password do not match any user in this service
+2025-10-29 13:30:04,363 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:30:04,486 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:30:04,488 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:30:04,581 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  user on ('id', 'user-name')
+2025-10-29 13:30:04,582 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:30:04,668 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'password')
+2025-10-29 13:30:04,669 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:30:06,850 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:30:06,851 UTC INFO     test_login_page  Expected message: Epic sadface: Password is required
+2025-10-29 13:30:06,892 UTC INFO     test_login_page  Current Error message: Epic sadface: Password is required
+2025-10-29 13:30:07,001 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:30:07,114 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:30:07,116 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:30:07,199 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'user-name')
+2025-10-29 13:30:07,200 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:30:07,295 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  password on ('id', 'password')
+2025-10-29 13:30:07,296 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:30:09,464 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:30:09,464 UTC INFO     test_login_page  Expected message: Epic sadface: Username is required
+2025-10-29 13:30:09,505 UTC INFO     test_login_page  Current Error message: Epic sadface: Username is required
+2025-10-29 13:30:09,620 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:30:09,736 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:30:09,737 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:30:09,819 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'user-name')
+2025-10-29 13:30:09,820 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:30:09,896 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:   on ('id', 'password')
+2025-10-29 13:30:09,896 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:30:12,073 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:30:12,075 UTC INFO     test_login_page  Expected message: Epic sadface: Username is required
+2025-10-29 13:30:12,126 UTC INFO     test_login_page  Current Error message: Epic sadface: Username is required
+2025-10-29 13:30:12,245 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'user-name')
+2025-10-29 13:30:12,359 UTC INFO     src.pages.saucedemo.selenium.base_page  Clearing text on ('id', 'password')
+2025-10-29 13:30:12,359 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 13:30:12,483 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  locked_out_user on ('id', 'user-name')
+2025-10-29 13:30:12,483 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 13:30:12,583 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 13:30:12,583 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 13:30:14,748 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 13:30:14,749 UTC INFO     test_login_page  Expected message: Epic sadface: Sorry, this user has been locked out.
+2025-10-29 13:30:14,789 UTC INFO     test_login_page  Current Error message: Epic sadface: Sorry, this user has been locked out.
+2025-10-29 13:30:14,791 UTC INFO     conftest         Test name: 'test_login_invalid[credentials_errors]' finished

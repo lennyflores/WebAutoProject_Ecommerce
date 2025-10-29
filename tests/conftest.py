@@ -34,6 +34,7 @@ def driver():
     chrome_options.add_argument("--disable-infobars")
     #end of configuration
 
+    """
     if pytest.browser_type == "chrome":
         driver = webdriver.Chrome(options=chrome_options)
     elif pytest.browser_type == "firefox":
@@ -44,7 +45,17 @@ def driver():
         driver = webdriver.Safari()
     else:
         raise ValueError(f"Browser {pytest.browser_type} is not supported")
-    
+    """
+    grid_url = "http://localhost:4444/wd/hub"  # Replace with your Hub's address if different
+
+    #options = ChromeOptions()
+    #options = chrome_options
+
+    driver = webdriver.Remote(
+        command_executor=grid_url,
+        options=chrome_options
+    )
+
     driver.maximize_window()
     driver.implicitly_wait(10)
     

@@ -31,22 +31,7 @@ class CartPage(BasePage):
     def get_cart_items(self):
         """Return a list of WebElements representing inventory items."""
         return self.driver.find_elements(*self.inventory_list)
-
-    """
-    def click_add_to_cart_for_all_inventory_items(self):
-        cart_count=0
-        inventory_items = self.get_inventory_items()
-        for item in inventory_items:
-            try:
-                add_button = item.find_element(*self.add_to_cart_button)
-                add_button.click()                
-                sleep(2)
-                print("Clicked Add to Cart for one product.")
-                cart_count+=1
-            except Exception as e:
-                print(f"Failed to click Add to Cart for a product: {e}")
-        return cart_count
-    """        
+ 
     def click_checkout_button(self):
         checkout_button = self.find_element(self.checkout_button)
         checkout_button.click()

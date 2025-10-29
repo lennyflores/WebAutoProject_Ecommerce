@@ -1,9 +1,6 @@
 import allure
 import pytest
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
-from src.pages.saucedemo.selenium.login_page import LoginPage
 from utils.logger import get_logger
 
 

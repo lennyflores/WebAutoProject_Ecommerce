@@ -92,13 +92,7 @@ def log_test_name(request):
     request.addfinalizer(fin)
 
 
-#@pytest.fixture(scope="session")
-#def credentials():
-    """Provide credentials once per pytest session."""
- #   Config.validate()
- #   return {"user": Config.USER, "password": Config.PASS}
- # Fixture: Environment
-
+"""Provide credentials once per pytest session."""
 @pytest.fixture(scope="session")
 def env(request):
     # Optional: validate config once
@@ -126,4 +120,4 @@ def login(driver, env):
 @pytest.fixture(params=["credentials_errors"])
 def read_data(request):
     """Read JSON data for a specific test case."""
-    return read_json_file(f"tests\data\{request.param}.json")
+    return read_json_file(f"tests/data/{request.param}.json")

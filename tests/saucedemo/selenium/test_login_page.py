@@ -13,6 +13,7 @@ logger = get_logger(__name__)
 class TestSaucedemoLoginPage:
 
     @pytest.mark.functional
+    @pytest.mark.priority("high")
     def test_successfull_login(self, driver, env, log_test_name):
         """
         Verify user can log in successfully with valid credentials.
@@ -37,6 +38,7 @@ class TestSaucedemoLoginPage:
         logger.info(f"Login successful for user: {Config.USER}")
         
     @pytest.mark.functional
+    @pytest.mark.priority("high")
     @pytest.mark.parametrize("read_data", ["credentials_errors"], indirect=True)
     def test_login_invalid(self, driver, env, read_data, log_test_name):
         """

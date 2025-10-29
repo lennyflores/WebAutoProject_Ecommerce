@@ -1,0 +1,2 @@
+2025-10-29 14:07:04,672 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 14:07:04,679 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username

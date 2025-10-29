@@ -1,0 +1,102 @@
+2025-10-29 14:07:13,556 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 14:07:13,557 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 14:07:13,707 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 14:07:13,709 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 14:07:13,813 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 14:07:13,814 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 14:07:16,129 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 14:07:16,137 UTC INFO     conftest         Test name: 'test_cart_checkout_page_title' started
+2025-10-29 14:07:18,396 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:18,398 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:20,570 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:20,571 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:22,763 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:22,763 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:24,928 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:24,930 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:27,101 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:27,103 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:29,267 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:29,268 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:31,448 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('class name', 'shopping_cart_badge')
+2025-10-29 14:07:31,632 UTC INFO     conftest         Test name: 'test_cart_checkout_page_title' finished
+2025-10-29 14:07:34,274 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 14:07:34,276 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 14:07:34,433 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 14:07:34,434 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 14:07:34,548 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 14:07:34,550 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 14:07:36,829 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 14:07:36,837 UTC INFO     conftest         Test name: 'test_cart_checkout_your_information' started
+2025-10-29 14:07:39,090 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:39,093 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:41,257 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:41,258 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:43,420 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:43,422 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:45,631 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:45,633 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:47,798 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:47,799 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:49,960 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:07:49,961 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:07:52,141 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('class name', 'shopping_cart_badge')
+2025-10-29 14:07:52,401 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  John on ('id', 'first-name')
+2025-10-29 14:07:52,486 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  Doe on ('id', 'last-name')
+2025-10-29 14:07:52,580 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  12345 on ('id', 'postal-code')
+2025-10-29 14:07:54,754 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'continue')
+2025-10-29 14:07:54,757 UTC INFO     conftest         Test name: 'test_cart_checkout_your_information' finished
+2025-10-29 14:07:57,270 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 14:07:57,272 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 14:07:57,424 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 14:07:57,424 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 14:07:57,536 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 14:07:57,537 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 14:07:59,848 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 14:07:59,850 UTC INFO     conftest         Test name: 'test_cart_checkout_overview' started
+2025-10-29 14:08:02,150 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:02,151 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:04,323 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:04,325 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:06,500 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:06,501 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:08,705 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:08,706 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:10,905 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:10,906 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:13,072 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:13,072 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:15,252 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('class name', 'shopping_cart_badge')
+2025-10-29 14:08:15,453 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  John on ('id', 'first-name')
+2025-10-29 14:08:15,538 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  Doe on ('id', 'last-name')
+2025-10-29 14:08:15,611 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  12345 on ('id', 'postal-code')
+2025-10-29 14:08:17,788 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'continue')
+2025-10-29 14:08:20,017 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'finish')
+2025-10-29 14:08:20,057 UTC INFO     conftest         Test name: 'test_cart_checkout_overview' finished
+2025-10-29 14:08:22,046 UTC INFO     src.pages.saucedemo.selenium.login_page  Navigating to the login page: https://www.saucedemo.com/
+2025-10-29 14:08:22,059 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter username
+2025-10-29 14:08:22,666 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  standard_user on ('id', 'user-name')
+2025-10-29 14:08:22,668 UTC INFO     src.pages.saucedemo.selenium.login_page  Enter password
+2025-10-29 14:08:22,786 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  secret_sauce on ('id', 'password')
+2025-10-29 14:08:22,787 UTC INFO     src.pages.saucedemo.selenium.login_page  Click login button
+2025-10-29 14:08:25,091 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'login-button')
+2025-10-29 14:08:25,092 UTC INFO     conftest         Test name: 'test_cart_checkout_complete' started
+2025-10-29 14:08:27,352 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:27,353 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:29,558 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:29,560 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:31,736 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:31,738 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:33,930 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:33,932 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:36,081 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:36,083 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:38,259 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('xpath', "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")
+2025-10-29 14:08:38,260 UTC INFO     src.pages.saucedemo.selenium.inventory_page  Clicked Add to Cart for a product.
+2025-10-29 14:08:40,475 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('class name', 'shopping_cart_badge')
+2025-10-29 14:08:40,840 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  John on ('id', 'first-name')
+2025-10-29 14:08:40,935 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  Doe on ('id', 'last-name')
+2025-10-29 14:08:41,024 UTC INFO     src.pages.saucedemo.selenium.base_page  Entering text:  12345 on ('id', 'postal-code')
+2025-10-29 14:08:43,229 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'continue')
+2025-10-29 14:08:45,440 UTC INFO     src.pages.saucedemo.selenium.base_page  Clicking element:  ('id', 'finish')
+2025-10-29 14:08:45,478 UTC INFO     conftest         Test name: 'test_cart_checkout_complete' finished

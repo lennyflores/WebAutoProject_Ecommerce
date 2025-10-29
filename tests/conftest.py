@@ -2,7 +2,10 @@ import logging
 import pytest
 from selenium import webdriver
 from utils.logger import get_logger
-#from selenium.webdriver.chrome.options import Options
+from config.config import Config
+from src.pages.saucedemo.selenium.login_page import LoginPage
+from config.config import Config
+from utils.read_json_data import read_json_file
 
 logger = get_logger(__name__)
 
@@ -15,8 +18,7 @@ def first_entry(request):
     logger.debug("Browser: %s", browser)
     return "a"
 
-# Arrange
-#@pytest.fixture(scope="class")
+
 #fixture that will be executed once for each test function
 @pytest.fixture(scope="function")
 def driver():
@@ -77,3 +79,40 @@ def log_test_name(request):
         logger.info("Test name: '%s' finished", request.node.name)
     
     request.addfinalizer(fin)
+
+
+#@pytest.fixture(scope="session")
+#def credentials():
+    """Provide credentials once per pytest session."""
+ #   Config.validate()
+ #   return {"user": Config.USER, "password": Config.PASS}
+ # Fixture: Environment
+
+@pytest.fixture(scope="session")
+def env(request):
+    # Optional: validate config once
+    Config.validate()
+    environment = request.config.getoption("--env", default="development")
+    return {
+        "env": environment,
+        "user": Config.USER,
+        "pass": Config.PASS
+    }
+
+
+
+# Fixture: Login (UI login before tests)
+@pytest.fixture(scope="function")
+def login(driver, env):
+    """
+    Logs in using credentials and returns InventoryPage object.
+    """
+    login_page = LoginPage(driver, env["env"])
+    inventory_page = login_page.login(env["user"], env["pass"])
+    return inventory_page
+
+# Fixture: Read JSON data
+@pytest.fixture(params=["credentials_errors"])
+def read_data(request):
+    """Read JSON data for a specific test case."""
+    return read_json_file(f"tests\data\{request.param}.json")

@@ -4,6 +4,8 @@ import logging
 from utils.logger import get_logger
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
+
 
 logger = get_logger(__name__)
 
@@ -14,7 +16,7 @@ class BasePage:
 		self.wait = WebDriverWait(self.driver, 10)
 	
 	def find_element(self, by_locator):
-		logger.info(f"Finding element:  {by_locator}")
+		#logger.info(f"Finding element:  {by_locator}")
 		return self.wait.until(EC.visibility_of_element_located(by_locator))
 		
 	def click_element(self, by_locator):        
@@ -43,4 +45,10 @@ class BasePage:
 		Get the text of an element
 		"""
 		return self.find_element(by_locator).text
-		
+	
+	def clear_text(self, by_locator):
+		# Clear the text of an element
+		element = self.find_element(by_locator)
+		element.send_keys(Keys.CONTROL + "a")    	
+		element.send_keys(Keys.DELETE)
+		logger.info(f"Clearing text on {by_locator}")

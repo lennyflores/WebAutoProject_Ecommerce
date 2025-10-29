@@ -3,15 +3,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import logging
 from utils.logger import get_logger
-from src.pages.selenium.base_page import BasePage
-from src.pages.selenium.cart_page import CartPage
+from src.pages.saucedemo.selenium.base_page import BasePage
+from src.pages.saucedemo.selenium.checkout_page import CheckoutPage
+
 
 logger = get_logger(__name__)
 
-class InventoryPage(BasePage):
+class CartPage(BasePage):
 
     # inventory page locators
-    inventory_title = (By.CLASS_NAME, "title")
+    cart_title = (By.CLASS_NAME, "title")
+    checkout_button = (By.ID, "checkout")
+    
     inventory_list = (By.XPATH, "//*[@id='inventory_container']/div/div[@class='inventory_item']")
     add_to_cart_button = (By.XPATH, "//*[@id='inventory_container']/div/div[@class='inventory_item']/div[@class='inventory_item_description']/div[@class='pricebar']/button[text()='Add to cart']")    
     shopping_cart_badge = (By.CLASS_NAME, "shopping_cart_badge")
@@ -22,13 +25,14 @@ class InventoryPage(BasePage):
        
 
     # inventory page actions  
-    def get_inventory_title(self):
-        return self.find_element(self.inventory_title)
+    def get_cart_title(self):
+        return self.find_element(self.cart_title)
 
-    def get_inventory_items(self):
+    def get_cart_items(self):
         """Return a list of WebElements representing inventory items."""
         return self.driver.find_elements(*self.inventory_list)
 
+    """
     def click_add_to_cart_for_all_inventory_items(self):
         cart_count=0
         inventory_items = self.get_inventory_items()
@@ -42,12 +46,14 @@ class InventoryPage(BasePage):
             except Exception as e:
                 print(f"Failed to click Add to Cart for a product: {e}")
         return cart_count
+    """        
+    def click_checkout_button(self):
+        checkout_button = self.find_element(self.checkout_button)
+        checkout_button.click()
+        return CheckoutPage(self.driver)
+
         
-    def get_shopping_cart_badge_count(self):
-        return self.get_element_text(self.shopping_cart_badge)
-        
-    def click_shopping_cart_badge(self):
-        self.click_element(self.shopping_cart_badge)
-        return CartPage(self.driver)
+    
+
 
     

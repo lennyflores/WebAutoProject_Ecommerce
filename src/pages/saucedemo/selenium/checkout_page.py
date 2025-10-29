@@ -3,8 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import logging
 from utils.logger import get_logger
-from src.pages.selenium.base_page import BasePage
-#from src.pages.selenium.inventory_page import InventoryPage
+from src.pages.saucedemo.selenium.base_page import BasePage
 
 
 logger = get_logger(__name__)
